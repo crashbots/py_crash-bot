@@ -50,7 +50,7 @@ def create_threads():
 if __name__ == "__main__":
     create_threads()
 
-TOKEN = settings['token']
+TOKEN = open("token.txt").read()
 activity = discord.Game(name=settings['statustext'], type=1)
 a = 0
 b = 1
